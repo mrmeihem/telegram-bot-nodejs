@@ -8,8 +8,8 @@ const cron = require('node-cron');
 // Импорт модуля с константами
 const my_const = require('./const')
 
+// Cron test
 let i = 0;
-
 const task = cron.schedule('* * * * * *', () => {
   console.log('stopped task-' + i);
   i++;
